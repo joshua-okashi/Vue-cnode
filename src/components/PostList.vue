@@ -39,7 +39,7 @@
               | {{post.last_reply_at | formaDate }}
             // 最后回复时间
           li
-            pagination(@handlelist='renderList')
+            pagination(@handleList='renderList')
 </template>
 
 <script>

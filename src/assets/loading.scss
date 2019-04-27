@@ -1,0 +1,33 @@
+.loading {
+  $width: 320px;
+  $height: 320px;
+  
+  text-align: center;
+  width: $width;
+  height: $height;
+  position: relative;
+  margin: 200px auto;
+  .double-bounce1,
+  .double-bounce2 {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    background-color: #67CF22;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2.0s infinite ease-in-out;
+  }
+  .double-bounce2 {
+    animation-delay: -1.0s;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(0.0);
+    } 50% {
+      transform: scale(1.0);
+    }
+   }
+}
